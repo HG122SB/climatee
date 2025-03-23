@@ -18,7 +18,7 @@ fetch(geoApiUrl)
     const lat = data.results[0].latitude;
     const lon = data.results[0].longitude;
     
-      const weatherApiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude}&=${lon}&current_weather=true';
+      const weatherApiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
     
     return fetch(weatherApiUrl);
     })
