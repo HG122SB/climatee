@@ -5,8 +5,8 @@ function fetchWeather() {
     return;
   }
 
-const geoApiUrl = 'https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&format=json';
-
+geoApiUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&format=json`;
+  
 fetch(geoApiUrl)
     .then(response => response.json())
     .then(data => {
