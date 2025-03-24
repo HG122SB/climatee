@@ -33,7 +33,7 @@ fetch(geoApiUrl)
       const windSpeed = weatherData.current_weather.windspeed;
       const Condition =  weatherData.current_weather.weathercode;
        
-      document.getElementById("weather").innerText = 'Temperature: ${temp}C | Wind Speed: ${windSpeed} km/h';
+      document.getElementById("weather").innerText = ` Temperature: ${temp}°C | Wind Speed: ${windSpeed}'km/h;
     })
     .catch(error => {
         console.error("Error fetching weather:", error);
