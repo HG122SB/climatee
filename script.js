@@ -5,7 +5,7 @@ function fetchWeather() {
     return;
   }
 
-geoApiUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&format=json`;
+  const geoApiUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&format=json`;
   
 fetch(geoApiUrl)
     .then(response => response.json())
@@ -33,11 +33,11 @@ fetch(geoApiUrl)
       const windSpeed = weatherData.current_weather.windspeed;
       const Condition =  weatherData.current_weather.weathercode;
        
-      document.getElementById("weather").innerText = ` Temperature: ${temp}°C | Wind Speed: ${windSpeed}'km/h;
+      document.getElementById("weather").innerText = `Temperature: ${temp}°C | Wind Speed: ${windSpeed}km/h';
     })
     .catch(error => {
-        console.error("Error fetching weather:", error);
-        document.getElementById("weather").innerText = "Error fetching weather data.";
+       console.error("Error fetching weather:", error);
+       document.getElementById("weather").innerText = "Error fetching weather data.";
     });
        
       
