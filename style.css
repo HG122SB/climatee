@@ -1,15 +1,18 @@
+/* General styling */
 body{
-  font-family: Arial,sans-Serif;
+  font-family: Arial, sans-Serif;
   text-align: center;
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
 }
 
+/* Heading */
 h1 {
   color: #333;
 }
 
+/* input field */
 input {
   padding: 10px;
   font-size: 1em;
@@ -17,6 +20,7 @@ input {
   border-radius: 5px;
 }
 
+/*Button */
 button {
   margin-left: 10px;
   padding: 10px 15px;
