@@ -1,3 +1,5 @@
+const apiKey = '305a19aa4c404288256d28a85fc65ea7';
+
 function fetchWeather() {
   const city = document.getElementById("city").value.trim();
   if (!city) {
