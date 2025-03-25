@@ -5,7 +5,8 @@ function fetchWeather() {
     return;
   }
 
-  const geoApiUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&format=json`;
+  const geoApiUrl =  `https://api.openweathermap.org/data/2.5/weather?q={chennai}&appid={305a19aa4c404288256d28a85fc65ea7}`;
+
   
 fetch(geoApiUrl)
     .then(response => response.json())
@@ -18,7 +19,7 @@ fetch(geoApiUrl)
     const lat = data.results[0].latitude;
     const lon = data.results[0].longitude;
     
-      const weatherApiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+      const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={305a19aa4c404288256d28a85fc65ea7}';
     
     return fetch(weatherApiUrl);
     })
