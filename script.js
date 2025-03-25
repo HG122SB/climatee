@@ -5,7 +5,7 @@ function fetchWeather() {
     return;
   }
 
-  const geoApiUrl =  `https://api.openweathermap.org/data/2.5/weather?q={chennai}&appid={b380bc7b27bc25a2f0be366f6abda007}`;
+  const geoApiUrl =  `https://api.openweathermap.org/data/2.5/weather?q={chennai}&appid=27c4038bb432eef383dca03f927ce267`;
 
   
 fetch(geoApiUrl)
@@ -19,7 +19,7 @@ fetch(geoApiUrl)
     const lat = data.results[0].latitude;
     const lon = data.results[0].longitude;
     
-      const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={b380bc7b27bc25a2f0be366f6abda007}';
+      const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=27c4038bb432eef383dca03f927ce267';
     
     return fetch(weatherApiUrl);
     })
